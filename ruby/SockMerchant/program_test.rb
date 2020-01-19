@@ -8,10 +8,18 @@ class ProgramTest < Minitest::Test
     assert_instance_of Program, program
   end
 
-  def test_program_input_format
+  def test_program_can_return_sock_count
+    skip
     program = Program.new
     n = 3
     ar = [10,20,20]
-    assert_equal [10,20,20], program.sockMerchant(n, ar)
+    assert_equal 3, program.sockMerchant(n, ar)
+  end
+
+  def test_program_can_return_all_socks
+    program = Program.new
+    n = 3
+    ar = [10,20,10]
+    assert_equal [10,20,10], program.sockMerchant(n, ar)
   end
 end
