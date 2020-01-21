@@ -27,7 +27,10 @@ class Program
 
   def countingValleys(n,s)
     scores = step_scores(s)
-    
+    scores.chunk do |score|
+      score == 0
+    end
+    # binding.pry
     # slope_score = scores.join.split("0")
   end
 end
