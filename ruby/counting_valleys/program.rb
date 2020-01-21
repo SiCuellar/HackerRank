@@ -16,13 +16,13 @@ class Program
     directions = steps_direction(s)
     counter = 0
     directions.map do |dir|
-      # binding.pry
       if dir == 1
         counter += 1
       elsif dir == -1
-        counter = counter -1 
+        counter = counter -1
       else
       end
     end
   end
+
 end

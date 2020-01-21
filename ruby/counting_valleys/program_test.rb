@@ -26,4 +26,17 @@ class ProgramTest < Minitest::Test
     assert_equal [1,2,1], program.step_scores(s)
   end
 
+  def test_it_can_return_14r_test_score
+    program = Program.new
+    s = "udduuduu"
+    assert_equal [1,0,-1,0,1,0,1,2], program.step_scores(s)
+  end
+
+  def it_can_split_scores_on_eleveation
+    program = Program.new
+    s = "udduuduu"
+    n = 8
+    assert_equal [[1],[-1],[1],[1,2]], program.countingValleys(n,s)
+  end
+
 end
