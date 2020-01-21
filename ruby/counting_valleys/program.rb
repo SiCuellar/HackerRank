@@ -25,4 +25,9 @@ class Program
     end
   end
 
+  def countingValleys(n,s)
+    scores = step_scores(s)
+    
+    # slope_score = scores.join.split("0")
+  end
 end
