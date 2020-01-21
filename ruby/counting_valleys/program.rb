@@ -43,7 +43,6 @@ class Program
         altitude_counter += 1
         if altitude_counter == 0
           valley_counter += 1
-          binding.pry
         end
       else
         altitude_counter -= 1
