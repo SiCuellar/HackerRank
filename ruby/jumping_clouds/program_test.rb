@@ -24,8 +24,11 @@ class ProgramTest < Minitest::Test
     prgram = Program.new
     c = [0,1,0,1,0]
     assert_equal 2, prgram.jumpingOnClouds(c)
-  end 
+  end
 
-
-
+  def test_it_can_jump_with_cosecutive_safe_clouds
+    program = Program.new
+    c = [0,0,1,0,0,1,0]
+    assert_equal 4, program.jumpingOnClouds(c)
+  end
 end
