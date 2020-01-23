@@ -7,8 +7,18 @@ class Program
 
   def jumpingOnClouds(clouds)
     counter = 0
+    current_index = 0
     clouds.each_with_index do |c,i|
-      binding.pry
+      if c == 0
+        counter += 1
+      else
+        false
+      end
     end
   end
 end
+
+
+
+
+# [00100]
