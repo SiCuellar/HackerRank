@@ -14,9 +14,18 @@ class ProgramTest < Minitest::Test
     assert_equal [0,1,0], program.clouds(c)
   end
 
-  def test_it_can_jump_min_clouds
+  def test_it_can_jump_one_thunder_clouds
     program = Program.new
     c = [0,1,0]
     assert_equal 1, program.jumpingOnClouds(c)
   end
+
+  def test_it_can_jump_multiple_clouds
+    prgram = Program.new
+    c = [0,1,0,1,0]
+    assert_equal 2, prgram.jumpingOnClouds(c)
+  end 
+
+
+
 end

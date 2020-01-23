@@ -9,12 +9,11 @@ class Program
     counter = 0
     current_index = 0
     clouds.each_with_index do |c,i|
-      if c == 0
+      if c == 0 && clouds[i+1]
         counter += 1
-      else
-        false
       end
     end
+    counter
   end
 end
 
