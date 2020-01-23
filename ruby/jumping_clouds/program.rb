@@ -7,7 +7,6 @@ class Program
 
   def jumpingOnClouds(clouds)
     counter = 0
-    current_index = 0
     clouds.each_with_index do |c,i|
       if c == 0 && clouds[i+1]
         counter += 1
@@ -16,8 +15,3 @@ class Program
     counter
   end
 end
-
-
-
-
-# [00100]
