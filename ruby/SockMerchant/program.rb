@@ -12,13 +12,10 @@ class Program
         sock_pairs[s] = count + 1
       end
     end
-
     pairs = 0
-
     sock_pairs.values.each do |v|
       pairs += v / 2
     end
-
     pairs
   end
 end
