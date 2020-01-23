@@ -33,6 +33,7 @@ class ProgramTest < Minitest::Test
   end
 
   def test_it_can_make_consecutive_jumps
+    skip
     program = Program.new
     c = [0,0,0,0,1,0]
     assert_equal 3, program.jumpingOnClouds(c)
