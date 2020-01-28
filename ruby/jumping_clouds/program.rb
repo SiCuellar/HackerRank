@@ -9,7 +9,6 @@ class Program
     counter = 0
     clouds.each_with_index do |c,i|
       if c == 0 && clouds[i+1]
-        # make sure to add a validation case to to index checker
         counter += 1
       end
     end
