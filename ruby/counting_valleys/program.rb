@@ -12,7 +12,7 @@ class Program
     end
   end
 
-  def elavation_count(steps)
+  def elevation_count(steps)
     steps_array = step_converter(steps)
     steps_array.map do |step|
       if step == "U"
@@ -21,5 +21,19 @@ class Program
         -1
       end
     end
+  end
+
+  def countingValleys(n, s)
+    sea_level = 0
+    no_valleys = 0
+    s.each_char do |c|
+      if c == 'U'
+        sea_level += 1
+        no_valleys += 1  if sea_level == 0
+      else
+        sea_level -=  1
+      end
+    end
+    no_valleys
   end
 end
