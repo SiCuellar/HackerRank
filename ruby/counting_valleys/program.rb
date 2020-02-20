@@ -11,4 +11,15 @@ class Program
       true
     end
   end
+
+  def elavation_count(steps)
+    steps_array = step_converter(steps)
+    steps_array.map do |step|
+      if step == "U"
+        1
+      else
+        -1
+      end
+    end
+  end
 end

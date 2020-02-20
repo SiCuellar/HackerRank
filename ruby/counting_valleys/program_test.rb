@@ -18,4 +18,11 @@ class ProgramTest < Minitest::Test
     steps = "UDU"
     assert_equal true, program.constraint_checker(steps)
   end
+
+  def test_it_can_convert_steps_to_ints
+    program = Program.new
+    steps= "UDU"
+    assert_equal [1,-1,1], program.elavation_count(steps)
+  end
+
 end
